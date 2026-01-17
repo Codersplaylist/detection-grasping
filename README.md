@@ -39,7 +39,7 @@ A real-time computer vision system for fruit detection and robotic grasping usin
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/fruit-detection-grasping.git
+git clone https://github.com/Codersplaylist/detection-grasping.git
 cd fruit-detection-grasping
 
 # Install system dependencies (macOS)
@@ -204,7 +204,7 @@ robot.grasp()
 ## 📁 Project Structure
 
 ```
-fruit-detection-grasping/
+detection-grasping/
 ├── camera_yolo_integrated.py   # Main application
 ├── grasp_detector.py           # Grasp calculation module
 ├── convert_dataset.py          # Dataset conversion utility
@@ -342,9 +342,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Project Link**: https://github.com/yourusername/fruit-detection-grasping
+**Project Link**: https://github.com/Codersplaylist/detection-grasping
 
-**Your Name** - your.email@example.com
+**Sanghamitra** - your.email@example.com
 
 ---
 
