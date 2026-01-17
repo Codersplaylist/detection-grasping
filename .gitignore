@@ -145,24 +145,24 @@ cython_debug/
 
 # Project specific
 # Trained models (too large for git)
-models/*.pt
-!models/.gitkeep
+# models/*.pt
+# !models/.gitkeep
 
 # Training runs and results
 runs/
 wandb/
 
 # Dataset files (can be large)
-dataset/train/images/*.jpg
-dataset/train/images/*.png
-dataset/val/images/*.jpg
-dataset/val/images/*.png
+# dataset/train/images/*.jpg
+# dataset/train/images/*.png
+# dataset/val/images/*.jpg
+# dataset/val/images/*.png
 
 # Keep directory structure but not images
-!dataset/train/images/.gitkeep
-!dataset/val/images/.gitkeep
-!dataset/train/labels/.gitkeep
-!dataset/val/labels/.gitkeep
+# !dataset/train/images/.gitkeep
+# !dataset/val/images/.gitkeep
+# !dataset/train/labels/.gitkeep
+# !dataset/val/labels/.gitkeep
 
 # Original data (not needed in repo)
 test/
