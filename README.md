@@ -344,7 +344,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Project Link**: https://github.com/Codersplaylist/detection-grasping
 
-**Sanghamitra** - your.email@example.com
+**Sanghamitra** - sanghamitrarajagopal.21@gmail.com
 
 ---
 
