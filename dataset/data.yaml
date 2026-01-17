@@ -1,0 +1,10 @@
+# YOLO Dataset Configuration
+path: /Users/mac/Documents/appa project all files/dataset
+train: train/images
+val: val/images
+
+# Number of classes
+nc: 3
+
+# Class names
+names: ['apple', 'banana', 'orange']

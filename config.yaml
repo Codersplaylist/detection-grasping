@@ -1,0 +1,85 @@
+# YOLO Object Detection Configuration
+
+# Model settings
+model:
+  # Path to trained YOLO model weights
+  # Download from your Colab training results (my_model.pt)
+  weights: "models/my_model.pt"  # Update this path to your model file
+  
+  # Image size for inference (smaller = faster, larger = more accurate)
+  # Options: 640, 512, 416, 320
+  imgsz: 640
+  
+  # Confidence threshold (0.0 - 1.0)
+  # Only detections with confidence above this will be shown
+  conf_threshold: 0.25
+  
+  # IOU threshold for Non-Maximum Suppression
+  iou_threshold: 0.45
+  
+  # Device to run inference on
+  # Options: 'cuda', 'mps', 'cpu', or device ID like 'cuda:0'
+  # Set to 'mps' for Mac GPU, 'cuda' for NVIDIA GPU, or 'cpu'
+  device: "cpu"  # Auto-detect will override this
+
+# Camera settings
+camera:
+  # Camera device ID (usually 0 for built-in webcam)
+  device_id: 0
+  
+  # Resolution
+  width: 1920
+  height: 1080
+  
+  # Frame processing
+  # Process every Nth frame (1 = every frame, 2 = every other frame)
+  frame_skip: 1
+
+# Detection visualization
+display:
+  # Show bounding boxes
+  show_boxes: true
+  
+  # Show class labels
+  show_labels: true
+  
+  # Show confidence scores
+  show_confidence: true
+  
+  # Show FPS counter
+  show_fps: true
+  
+  # Bounding box line thickness
+  box_thickness: 2
+  
+  # Font scale for text
+  font_scale: 0.6
+  
+  # Colors for different classes (BGR format)
+  class_colors:
+    apple: [0, 0, 255]      # Red
+    banana: [0, 255, 255]   # Yellow
+    orange: [0, 165, 255]   # Orange
+
+# Grasp detection settings
+grasp:
+  # Enable grasp point detection
+  enabled: true
+  
+  # Show grasp point visualization
+  show_grasp_point: true
+  
+  # Grasp point marker size
+  marker_size: 10
+  
+  # Grasp point color (BGR)
+  marker_color: [255, 0, 255]  # Magenta
+  
+  # Print grasp coordinates to console
+  print_coordinates: true
+
+# Classes (must match your training)
+classes:
+  - apple
+  - banana
+  - orange
